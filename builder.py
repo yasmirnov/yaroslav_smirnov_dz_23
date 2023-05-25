@@ -1,7 +1,6 @@
 from typing import Callable, Dict, Iterable, List, Optional
 
-from utils import filter_query, limit_query, map_query, sort_query, unique_query
-
+from utils import filter_query, limit_query, map_query, sort_query, unique_query, regex_query
 
 CMD_TO_FUNCTIONS: Dict[str, Callable] = {
     'filter': filter_query,
@@ -9,6 +8,7 @@ CMD_TO_FUNCTIONS: Dict[str, Callable] = {
     'limit': limit_query,
     'map': map_query,
     'sort': sort_query,
+    'regex': regex_query,
 }
 
 
